@@ -1,3 +1,10 @@
+device/components
+device/documentation
+device/external
+device/external_tools
+device/integration
+device/modules
+
 # Prerequisites
 *.d
 
