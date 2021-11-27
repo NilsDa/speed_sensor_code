@@ -2,6 +2,9 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="351" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="362" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="379" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../main.c" useHWbreakpoint="false"/>
   <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
@@ -28,8 +31,12 @@
   <ProjectSessionItem path="speed_sensor_v1"/>
   <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1"/>
   <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;Application"/>
+  <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;Board Definition"/>
   <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;custom_Drivers"/>
+  <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;FATFS"/>
+  <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;None"/>
   <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;nRF_Drivers"/>
+  <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;nRF_Libraries"/>
   <ProjectSessionItem path="speed_sensor_v1;speed_sensor_v1;nRF_Log"/>
  </Project>
  <Register1>
@@ -67,11 +74,25 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="1424" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/config/sdk_config.h" selected="0" top="1404" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="1034" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/config/sdk_config.h" selected="0" top="1021" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="15" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/nrf_drv_spi_lis2dh/nrf_drv_lis2dh.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="5" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="19" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/libraries/util/sdk_common.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="90" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../main.c" selected="1" top="75" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="19" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/libraries/util/sdk_common.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="362" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../main.c" selected="1" top="329" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="57" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.c" selected="0" top="99" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="17" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="213" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/math/math.c" selected="0" top="191" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="43" y="26" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/math/math.h" selected="0" top="16" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="32" y="190" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/nrf_drv_spi_lis2dh/cadence_sensor_v2.c" selected="0" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/nrf_drv_spi_lis2dh/cadence_sensor_v2.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/boards/boards.h" selected="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="114" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/components/boards/pca10040.h" selected="0" top="82" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/boards/boards.c" selected="0" top="198" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="56" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/components/libraries/block_dev/sdc/nrf_block_dev_sdc.h" selected="0" top="29" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/sdcard_fatfs/sdcard_fatfs.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="13" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/sdcard_fatfs/sdcard_fatfs.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="66" y="346" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/modules/nrfx/drivers/src/nrfx_spim.c" selected="0" top="324" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="3551" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/external/fatfs/src/ff.c" selected="0" top="4060" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="96" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/libraries/util/app_error_weak.c" selected="0" top="77" codecName=""/>
  </Files>
- <ARMCrossStudioWindow activeProject="speed_sensor_v1" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/nils_/Documents/Projects/speed_sensor_ses/device/integration/nrfx/legacy" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="speed_sensor_v1" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/nils_/Documents/Projects/speed_sensor_code/device/integration/nrfx" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

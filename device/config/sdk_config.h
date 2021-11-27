@@ -53,6 +53,38 @@
 #endif
 
 
+// spi defines for sdcard
+#ifndef SDC_SCK_PIN
+#define SDC_SCK_PIN     4  ///< SDC serial clock (SCK) pin.
+#endif
+
+#ifndef SDC_MOSI_PIN
+#define SDC_MOSI_PIN    5  ///< SDC serial data in (DI) pin.
+#endif
+
+#ifndef SDC_MISO_PIN
+#define SDC_MISO_PIN    3  ///< SDC serial data out (DO) pin.
+#endif
+
+#ifndef SDC_CS_PIN
+#define SDC_CS_PIN      2  ///< SDC chip select (CS) pin.
+#endif
+
+#ifndef SPIM1_SCK_PIN
+#define SPIM1_SCK_PIN     4  ///< SDC serial clock (SCK) pin.
+#endif
+
+#ifndef SPIM1_MOSI_PIN
+#define SPIM1_MOSI_PIN    5  ///< SDC serial data in (DI) pin.
+#endif
+
+#ifndef SPIM1_MISO_PIN
+#define SPIM1_MISO_PIN    3  ///< SDC serial data out (DO) pin.
+#endif
+
+#ifndef SPIM1_SS_PIN
+#define SPIM1_SS_PIN      2  ///< SDC chip select (CS) pin.
+#endif
 
 
 
@@ -621,7 +653,7 @@
  
 
 #ifndef NRFX_SPI1_ENABLED
-#define NRFX_SPI1_ENABLED 0
+#define NRFX_SPI1_ENABLED 1
 #endif
 
 // <q> NRFX_SPI2_ENABLED  - Enable SPI2 instance
@@ -980,7 +1012,7 @@
 // <3=> NRF_GPIO_PIN_PULLUP 
 
 #ifndef NRF_SPI_DRV_MISO_PULLUP_CFG
-#define NRF_SPI_DRV_MISO_PULLUP_CFG 1
+#define NRF_SPI_DRV_MISO_PULLUP_CFG 0
 #endif
 
 // <e> SPI0_ENABLED - Enable SPI0 instance
@@ -1000,7 +1032,7 @@
 // <e> SPI1_ENABLED - Enable SPI1 instance
 //==========================================================
 #ifndef SPI1_ENABLED
-#define SPI1_ENABLED 0
+#define SPI1_ENABLED 1
 #endif
 // <q> SPI1_USE_EASY_DMA  - Use EasyDMA
  
@@ -1138,6 +1170,67 @@
 //==========================================================
 
 // <h> nRF_Libraries 
+
+
+
+
+//==========================================================
+// <q> APP_FIFO_ENABLED  - app_fifo - Software FIFO implementation
+ 
+
+#ifndef APP_FIFO_ENABLED
+#define APP_FIFO_ENABLED 1
+#endif
+
+// <e> APP_SDCARD_ENABLED - app_sdcard - SD/MMC card support using SPI
+//==========================================================
+#ifndef APP_SDCARD_ENABLED
+#define APP_SDCARD_ENABLED 1
+#endif
+// <o> APP_SDCARD_SPI_INSTANCE  - SPI instance used
+ 
+// <0=> 0 
+// <1=> 1 
+// <2=> 2 
+
+#ifndef APP_SDCARD_SPI_INSTANCE
+#define APP_SDCARD_SPI_INSTANCE 1
+#endif
+
+// <o> APP_SDCARD_FREQ_INIT  - SPI frequency
+ 
+// <33554432=> 125 kHz 
+// <67108864=> 250 kHz 
+// <134217728=> 500 kHz 
+// <268435456=> 1 MHz 
+// <536870912=> 2 MHz 
+// <1073741824=> 4 MHz 
+// <2147483648=> 8 MHz 
+
+#ifndef APP_SDCARD_FREQ_INIT
+#define APP_SDCARD_FREQ_INIT 67108864
+//#define APP_SDCARD_FREQ_INIT 33554432
+#endif
+
+// <o> APP_SDCARD_FREQ_DATA  - SPI frequency
+ 
+// <33554432=> 125 kHz 
+// <67108864=> 250 kHz 
+// <134217728=> 500 kHz 
+// <268435456=> 1 MHz 
+// <536870912=> 2 MHz 
+// <1073741824=> 4 MHz 
+// <2147483648=> 8 MHz 
+
+#ifndef APP_SDCARD_FREQ_DATA
+#define APP_SDCARD_FREQ_DATA 1073741824
+//#define APP_SDCARD_FREQ_DATA 33554432
+#endif
+
+// </e>
+
+
+
 
 //==========================================================
 // <e> APP_SCHEDULER_ENABLED - app_scheduler - Events scheduler

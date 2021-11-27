@@ -101,8 +101,8 @@ void ma_filter_reset(ma_filter_t* fltr)
 /////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////
-//#pragma push
-//#pragma O0  // do not optimize these functions -> Optimization level 0
+#pragma push
+#pragma O0  // do not optimize these functions -> Optimization level 0
 bool RANKFILTER_Init(sRankFilter_t *rankFilter, int16_t nodeCount)
 {
     if(rankFilter && rankFilter->rankBuffer &&
@@ -304,7 +304,7 @@ void RANKFILTER_UpdateNumNodes(sRankFilter_t *rankFilter, int16_t count)
 	
 	return;
 }
-//#pragma pop  // restore normal optimization level
+#pragma pop  // restore normal optimization level
 /////////////////////////////////////////////////////////////////////////////////////////
 
 

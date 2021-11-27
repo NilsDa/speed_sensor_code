@@ -39,15 +39,29 @@ APP_TIMER_DEF(m_app_timer_id);
 
 static void (*measurement_cb)(speed_data_t data);
 
-// static int16_t accel_raw[3];
 
-static volatile uint8_t counter_app_timer_handler = 0;
-static volatile uint8_t counter_fifo_read_cb = 0;
+//static volatile uint8_t counter_app_timer_handler = 0;
+//static volatile uint8_t counter_fifo_read_cb = 0;
+
+
+
+/*
+static speed_data_t calc_speed_data(int16_t* data)
+{
+
+
+
+
+
+  return {{data[0], data[1], data[2]}, orientation, delta_ms, delta_degree, cadence, cadence_filtered, cadence_full_turn, full_turn_detected, x_comp, y_comp}
+}
+*/
+
 
 
 static void fifo_read_cb(int16_t* raw)
 {
-	counter_fifo_read_cb++;
+	//counter_fifo_read_cb++;
 	//SEGGER_RTT_printf(0,"%d -> fifo_read_cb -> %d;%d;%d\n",counter_fifo_read_cb,raw[0],raw[1],raw[2]);
 	//SEGGER_RTT_printf(0,"fifo_read_cb aufgerufen!\n");
 
@@ -58,9 +72,6 @@ static void fifo_read_cb(int16_t* raw)
 
 	speed_data_t data = {{raw[0], raw[1], raw[2]}, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	
-	// accel_raw[0] = raw[0];
-	// accel_raw[1] = raw[1];
-	// accel_raw[2] = raw[2];
 
 
 	if(measurement_cb != NULL)
@@ -80,7 +91,7 @@ void lis2dh12_speed_measure()
 
 static void app_timer_handler_continuous(void * p_context)
 {
-	counter_app_timer_handler++;
+	//counter_app_timer_handler++;
 
 	//SEGGER_RTT_printf(0,"%d -> app_timer_handler_continuous aufgerufen!\n",counter_app_timer_handler);
 
@@ -140,15 +151,6 @@ void lis2dh12_speed_init(void (*cb)(speed_data_t data))
 	
 	NRF_LOG_INFO("init complete.\n");
 }
-
-
-
-// void lis2dh12_speed_get_raw(int16_t (*accel)[3])
-// {
-// 	(*accel)[0] = accel_raw[0];
-// 	(*accel)[1] = accel_raw[1];
-// 	(*accel)[2] = accel_raw[2];
-// }
 
 
 
