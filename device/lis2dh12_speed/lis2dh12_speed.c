@@ -45,17 +45,24 @@ static void (*measurement_cb)(speed_data_t data);
 
 
 
-/*
+
 static speed_data_t calc_speed_data(int16_t* data)
 {
 
 
+  uint8_t orientation = 0;
+  uint8_t delta_ms = 0;
+  uint8_t delta_degree = 0;
+  uint8_t cadence = 0;
+  uint8_t cadence_filtered = 0;
+  uint8_t cadence_full_turn = 0;
+  uint8_t full_turn_detected = 0;
+  uint8_t x_comp = 0;
+  uint8_t y_comp = 0;
 
-
-
-  return {{data[0], data[1], data[2]}, orientation, delta_ms, delta_degree, cadence, cadence_filtered, cadence_full_turn, full_turn_detected, x_comp, y_comp}
+  return (speed_data_t){{data[0], data[1], data[2]}, orientation, delta_ms, delta_degree, cadence, cadence_filtered, cadence_full_turn, full_turn_detected, x_comp, y_comp};
 }
-*/
+
 
 
 
@@ -70,8 +77,10 @@ static void fifo_read_cb(int16_t* raw)
 	// 	SEGGER_RTT_printf(0,"counter_fifo... >=10\n");
 	// }
 
-	speed_data_t data = {{raw[0], raw[1], raw[2]}, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	//speed_data_t data = {{raw[0], raw[1], raw[2]}, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	
+        speed_data_t data = calc_speed_data(raw);
+
 
 
 	if(measurement_cb != NULL)
@@ -126,8 +135,8 @@ void lis2dh12_speed_init(void (*cb)(speed_data_t data))
 
 
     // LIS2DH sensor config
-	//sensor_cfg.disable_axis = NRF_DRV_LIS2DH_DISABLE_X_AXIS_FLAG;
-	sensor_cfg.disable_axis = 0;
+	sensor_cfg.disable_axis = NRF_DRV_LIS2DH_DISABLE_X_AXIS_FLAG;
+	//sensor_cfg.disable_axis = 0;
 	sensor_cfg.data_rate = NRF_DRV_LIS2DH_DR_100HZ;
 	sensor_cfg.mode = NRF_DRV_LIS2DH_MODE_NORMAL;
 	sensor_cfg.measurement_range = NRF_DRV_LIS2DH_FS_2G;
