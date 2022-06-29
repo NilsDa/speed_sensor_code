@@ -11,3 +11,7 @@ contains segger embedded studio project and certain needed files/drivers for the
     - sensible option would be to record data. -> SPI connection to SDcard is tested and works. However needs to be resoldered and soldering is difficult and mechanically unstable because of poor PCB design (shame on me...).
 - antenna PCB-layout is tested and works well (at least for a BLE example-implementation)
 - ANT+ functionality could not yet be tested... because my Phone is buggy and the ANT+ service plugin doesn't work and I don't have an ANT+ dongle (to use my Laptop for testing)
+
+## LICENSE
+
+No license because project is properly unfinished :D Whoever would want access, needs to contact me.
