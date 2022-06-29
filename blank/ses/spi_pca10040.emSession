@@ -77,8 +77,8 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="20" y="1034" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/config/sdk_config.h" selected="0" top="1021" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="15" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/nrf_drv_spi_lis2dh/nrf_drv_lis2dh.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="40" y="19" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/components/libraries/util/sdk_common.h" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="267" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../main.c" selected="0" top="247" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="49" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.c" selected="1" top="117" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="276" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../main.c" selected="1" top="261" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="49" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.c" selected="0" top="117" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="17" useTextEdit="1" openedFrom="C:/Users/nils_/Documents/Projects/speed_sensor_code/main.c" useBinaryEdit="0" left="0" path="../../device/lis2dh12_speed/lis2dh12_speed.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="18" y="213" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/math/math.c" selected="0" top="191" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="43" y="26" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../device/math/math.h" selected="0" top="16" codecName="Default"/>
