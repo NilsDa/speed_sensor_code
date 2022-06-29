@@ -1,6 +1,6 @@
 # speed_sensor_code
 
-contains segger embedded studio project and certain needed files/drivers for the speed_sensor firmware. Additionally to this repo, to build the project, the nordic nrf5 SDK 17.0.2 aaand the softdevice 212 files obtained from thisisant are needed.
+contains segger embedded studio project and certain needed files/drivers for the speed_sensor firmware. Additionally to this repo, to build the project, the nordic nrf5 SDK 17.0.2 aaand files of the softdevice 212 obtained from thisisant are needed.
 
 ## Status:
 
